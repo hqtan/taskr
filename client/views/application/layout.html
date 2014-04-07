@@ -1,0 +1,12 @@
+<template name="layout">
+  <div class="container">
+  <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-inner">
+      <a class="brand" href="{{pathFor 'tasksList'}}">Taskr</a>
+    </div>
+  </header>
+    <div id="main" class="row-fluid">
+      {{> yield}}
+    </div>
+  </div>
+</template>
