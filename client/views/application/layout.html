@@ -2,6 +2,13 @@
   <div class="container">
     {{>header}}
     <div id="main" class="row-fluid">
+      <p align="right">
+      {{#if currentUser}}
+        <a class="btn btn-primary" href="{{pathFor 'taskSubmit'}}">Add Task</a>
+      {{else}}
+        <p align="center" class="alert alert-warning">Please sign in to add task</p>
+      {{/if}}
+      </p>
       {{> yield}}
     </div>
   </div>

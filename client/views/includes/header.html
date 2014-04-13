@@ -6,8 +6,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="{{pathFor 'tasksList'}}">taskr</a>
+      <a class="brand" href="{{pathFor 'tasksList'}}">Communications<strong>[</strong>taskr<strong>]</strong></a>
       <div class="nav-collapse collapse">
+        <ul class="nav pull-right">
+          <li>{{> loginButtons}}</li>
+        </ul>
       </div>
     </div>
   </header>
