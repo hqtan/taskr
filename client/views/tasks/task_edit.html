@@ -1,0 +1,37 @@
+<template name="taskEdit">
+  <form class="main">
+    <div class="control-group">
+        <label class="control-label" for="title">Title</label>
+        <div class="controls">
+            <input name="title" type="text" value="{{title}}" placeholder="Title"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="facility">Facility</label>
+        <div class="controls">
+            <input name="facility" type="text" value="{{facility}}" placeholder="Facility"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label" for="description">Description</label>
+        <div class="controls">
+            <input name="description" type="text" value="{{description}}" placeholder="Description"/>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <input type="submit" value="Submit" class="btn btn-primary submit"/>
+        </div>
+    </div>
+    <hr/>
+    <div class="control-group">
+        <div class="controls">
+            <a class="btn btn-danger delete" href="#">Delete task</a>
+        </div>
+    </div>
+  </form>
+</template>
+

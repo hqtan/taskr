@@ -1,13 +1,6 @@
 <template name="tasksList">
   <div id="wrapper">
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <li class="active"><a href="#">Overview</a></li>
-        <li><a href="#">Reports</a></li>
-        <li><a href="#">Analytics</a></li>
-        <li><a href="#">Export</a></li>
-      </ul>
-    </div>
+    {{> taskSidebar}}
     <div class="tasks">
       {{#each tasks}}
         {{> taskItem}}
