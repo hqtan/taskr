@@ -1,5 +1,16 @@
 Tasks = new Meteor.Collection('tasks');
 
+Tasks.allow({
+  update: ownsDocument,
+  remove: ownsDocument
+});
+
+Tasks.deny({
+  update: function(userId, post, fieldNames) {
+    // may only edit the following two fields:
+    return (_.without(fieldNames, 'title', 'facility', 'description').length > 0);
+  }
+});
 
 Meteor.methods({
   task: function(taskAttributes) {
