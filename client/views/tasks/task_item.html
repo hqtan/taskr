@@ -2,6 +2,10 @@
   <div class="task">
     <div class="task-content">
       <h3><a href="{{pathFor 'taskPage'}}">{{title}}</a><span>{{submittedText}}</span></h3>
+      <p>
+        requested by {{requester}}
+        {{#if ownTask}}<a href="{{pathFor 'taskEdit'}}">Edit</a>{{/if}}
+      </p>
     </div>
   </div>
 </template>
