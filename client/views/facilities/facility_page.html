@@ -1,0 +1,10 @@
+<template name="facilityPage">
+  <div id="wrapper">
+    {{> taskSidebar}}
+    <div class="tasks">
+      {{#each tasks}}
+        {{> taskItem}}
+      {{/each}}
+    </div>
+  </div>
+</template>

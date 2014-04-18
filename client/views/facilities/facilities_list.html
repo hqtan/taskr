@@ -1,6 +1,6 @@
 <template name="facilitiesList">
-  <li class="active"><a href="#">All Facilities</a></li>
+  <li class="active"><a href="/">All Facilities</a></li>
   {{#each facilities}}
-    <li><a href="#">{{facility}}</a></li>
+  <li><a href="/facilities/{{facility}}">{{facility}}</a></li>
   {{/each}}
 </template>
