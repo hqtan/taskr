@@ -5,4 +5,10 @@
     <h3>Description</h3>
     <span>{{description}}</span>
   </div>
+
+  <ul class="comments">
+    {{#each comments}}
+      {{> comment}}
+    {{/each}}
+  </ul>
 </template>
